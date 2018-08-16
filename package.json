@@ -19,7 +19,8 @@
   "devDependencies": {
     "@stencil/core": "^0.11.0",
     "@types/jest": "^23.3.1",
-    "jest": "^23.4.2"
+    "jest": "^23.4.2",
+    "rollup-plugin-rust": "file:../.."
   },
   "repository": {
     "type": "git",

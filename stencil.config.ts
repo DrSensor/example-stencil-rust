@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core';
+import rust from 'rollup-plugin-rust';
 
 export const config: Config = {
   namespace: 'mycomponent',
@@ -10,5 +11,6 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null
     }
-  ]
+  ],
+  plugins: [rust({export: 'instance'})]
 };
