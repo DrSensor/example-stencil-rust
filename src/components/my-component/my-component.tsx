@@ -1,4 +1,5 @@
 import { Component, Prop } from '@stencil/core';
+import wasm from './lib.rs';
 
 @Component({
   tag: 'my-component',
@@ -7,13 +8,13 @@ import { Component, Prop } from '@stencil/core';
 })
 export class MyComponent {
 
-  @Prop() first: string;
-  @Prop() last: string;
+  @Prop() a: number;
+  @Prop() b: number;
 
   render() {
     return (
       <div>
-        Hello, World! I'm {this.first} {this.last}
+        Hello, World! I'm {wasm.exports.add(this.a, this.b)}
       </div>
     );
   }
