@@ -18,7 +18,7 @@ describe('my-component', () => {
     });
 
     it('should work without parameters', () => {
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m');
+      expect(element.textContent.trim()).toEqual('Hello, World! I\'m 0');
     });
 
     it('should work with both `a` and `b`', async () => {
